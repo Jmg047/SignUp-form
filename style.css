@@ -9,11 +9,12 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: 'Fira Sans', sans-serif;
-  letter-spacing: 1.5px;
+  letter-spacing: 2px;
   display: flex;
   align-items: center; /* align on vert axis*/
   justify-content: center; /* align on horz axis*/
-  background: #b57c7c
+  background: rgb(88,30,105);
+  background: linear-gradient(90deg, rgba(88,30,105,0.8421743697478992) 0%, rgba(0,0,0,0.8365721288515406) 50%, rgba(61,31,173,0.6881127450980392) 100%);
 }
 
 .container{
@@ -27,9 +28,18 @@ body {
   box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.4);
 }
 
+form {
+  width: 90%
+}
+
+.form-group {
+ height: 65px;
+}
+
 label {
   position: relative;
   bottom: 3px;
+  margin-top: 3px;
 }
 
 input {
@@ -41,6 +51,7 @@ input {
   outline: none;
   transition: all 0.3s;
   box-sizing: border-box;
+  margin-bottom: 3px;
 }
 
 input:valid {
@@ -49,4 +60,37 @@ input:valid {
 
 input:invalid {
   border: 1px solid red;
+}
+
+button {
+cursor: pointer;
+color: white;
+background: black;
+border: none;
+border-radius: 5px;
+height: 50px;
+width: 100%;
+font-family: 'Fira Sans', sans-serif;
+font-size: 20px;
+letter-spacing: 2px;
+margin-top: 5px;
+}
+
+button:hover {
+  filter: brightness(200%);
+  background: rgba (20, 20, 20);
+}
+
+button:focus {
+  outline: none;
+}
+
+.message-container {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 90%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  color: black;
 }
