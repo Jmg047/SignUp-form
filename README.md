@@ -5,7 +5,7 @@ Language stack used is HTML, CSS, and JS.
 
 Fonts sourced from Google fonts.
 
-##What's in this project?
+## What's in this project?
 
 ← `README.md`
 
